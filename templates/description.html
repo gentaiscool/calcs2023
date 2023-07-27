@@ -1,3 +1,22 @@
-<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+This shared task is a part of the sixth workshop on Computational Approaches to Linguistic Code-Switching, (CALCS). CALCS will be collocated with EMNLP 2023, Singapore.
+The goal of the task is to develop a few-shot intent classification system in a multilingual setting. A tiny amount of training data is made available for Bangla-English, Indonesian-English, and Russian-English. Participants need to develop a single model that can identify intents in these three languages.
+For a give utterance text (without the mention of the language), the developed system has to predict the domain and intent.
 
-<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+We have formulated the task to be solved in few-shot or zero-shot setting. The train set contains X utterance texts from the mentioned three language pairs. There are 45 intents under 9 domains. For most of the intents there are 5 samples. For some intents, no training sample is there for a particular language pair. This emulates a zero-shot scenario, where the model has to learn about the intent from the examples for the same intent from other language pairs. 
+
+
+Here are some examples
+Text: লিয়ার বাড়ির এড্রেস কী? (Language: Bangla-English)
+Domain: People, Intent: GET_Location 
+
+Text: tampilkan ramalan cuaca Jakarta for ten minutes (Language: Indonesian-English)
+Domain: Weather, Intent: GET_WEATHER
+
+Text: сколько чиз класть в лазанью (Language: Russian-English)
+Domain: Recipes, Intent: GET_INFO_RECIPES
+
+
+
+
+Anti-Harassment Policy
+EMNLP adheres to the ACL Anti-Harassment Policy. Any participant who experiences harassment or hostile behaviour may contact any current member of the ACL Professional Conduct Committee. Please be assured that if you approach us, your concerns will be kept in strict confidence, and we will consult with you on any actions taken.
